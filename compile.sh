@@ -1,0 +1,1 @@
+pdflatex -output-directory="./compiled" "./examples/$1.tex"
