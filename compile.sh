@@ -1,2 +1,3 @@
-pdflatex -output-directory="./compiled" "./examples/$1.tex"
-open "./compiled/$1.pdf"
+python3 "./gen/$1.py" > "./gen/$1_gen.tex"
+pdflatex -output-directory="./compiled" "./gen/$1_gen.tex"
+open "./compiled/$1_gen.pdf"

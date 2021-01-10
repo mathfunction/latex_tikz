@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.5)  10 JAN 2021 22:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.5)  10 JAN 2021 23:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./examples/markov_chain.tex
-(./examples/markov_chain.tex
+**./gen/markov_chain_gen.tex
+(./gen/markov_chain_gen.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
 (/usr/local/texlive/2020/texmf-dist/tex/latex/standalone/standalone.cls
@@ -418,23 +418,23 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count199
 \l__pdf_internal_box=\box77
 )
-(./compiled/markov_chain.aux)
-\openout1 = `markov_chain.aux'.
+(./compiled/markov_chain_gen.aux)
+\openout1 = `markov_chain_gen.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -461,18 +461,18 @@ e
 [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./compiled/markov_chain.aux) ) 
+(./compiled/markov_chain_gen.aux) ) 
 Here is how much of TeX's memory you used:
- 12602 strings out of 480608
- 268742 string characters out of 5903631
- 488444 words of memory out of 5000000
- 28283 multiletter control sequences out of 15000+600000
+ 12606 strings out of 480608
+ 268869 string characters out of 5903631
+ 488504 words of memory out of 5000000
+ 28287 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,9n,74p,442b,817s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb>
-Output written on ./compiled/markov_chain.pdf (1 page, 13052 bytes).
+ 60i,9n,74p,403b,843s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2020/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb>
+Output written on ./compiled/markov_chain_gen.pdf (1 page, 12878 bytes).
 PDF statistics:
  15 PDF objects out of 1000 (max. 8388607)
  10 compressed objects within 1 object stream
