@@ -75,8 +75,8 @@ if __name__ == '__main__':
 		MarkovChainTikz(edgeArray)
 	"""
 	edgeArray = []
-	bound = 50
-	trans = [-1,10]
+	bound = 10
+	trans = [-1,1]
 	for i in range(bound+1):
 		for j in trans:
 			head = i
