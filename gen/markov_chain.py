@@ -76,7 +76,7 @@ if __name__ == '__main__':
 	"""
 	edgeArray = []
 	bound = 10
-	trans = [-1,1]
+	trans = [-1,2]
 	for i in range(bound+1):
 		for j in trans:
 			head = i
