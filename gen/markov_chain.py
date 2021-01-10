@@ -14,7 +14,7 @@ MACROS = [
 def braket(v):
 	return str(v).join(["{","}"])
 
-def MarkovChainTikz(jsonfile="./gen/markov_chain.json"):
+def MarkovChainTikz(edgeArray):
 	print(HELP_TEMPLATE)
 	print(HEAD_TEMPLATE)
 	print(''.join(MACROS))
@@ -23,16 +23,15 @@ def MarkovChainTikz(jsonfile="./gen/markov_chain.json"):
 	# python generate codes 
 	nodes = {}
 	edges = {}
-	with open(jsonfile) as f:
-		edgeArray = json.load(f)
+	
 	for e in edgeArray:
 		if e[0] not in nodes:
-			nodes[e[0]] = "v{}".format(len(nodes))
+			nodes[e[0]] = len(nodes)
 		if e[1] not in nodes:
-			nodes[e[1]] = "v{}".format(len(nodes))
+			nodes[e[1]] = len(nodes)
 	# draw node vertically 
 	x = 0.0
-	for v in nodes:
+	for v in sorted(nodes.keys()):
 		print("\\createNode{}{}{}{}{}{}".format(
 				braket(nodes[v]),
 				braket(v),
@@ -67,6 +66,33 @@ def MarkovChainTikz(jsonfile="./gen/markov_chain.json"):
 
 
 if __name__ == '__main__':
-	MarkovChainTikz()
 
+
+	"""
+	jsonfile="./gen/markov_chain.json"
+	with open(jsonfile) as f:
+		edgeArray = json.load(f)
+		MarkovChainTikz(edgeArray)
+	"""
+	edgeArray = []
+	bound = 50
+	trans = [-1,10]
+	for i in range(bound+1):
+		for j in trans:
+			head = i
+			if j == -1:
+				tail = max(0,i-1)
+				if i == 0:
+					edgeArray.append([head,tail,"91\% -1,+0"])
+				else:
+					edgeArray.append([head,tail,"91\%,-0,+0"])
+
+			else:
+				tail = min(max(0,i-1)+j,bound)
+				if i == 0:
+					edgeArray.append([head,tail,"9\%,-1,+10"])
+				else:
+					edgeArray.append([head,tail,"9\%,-0,+10"])
+
+	MarkovChainTikz(edgeArray)
 
