@@ -74,25 +74,26 @@ if __name__ == '__main__':
 		edgeArray = json.load(f)
 		MarkovChainTikz(edgeArray)
 	"""
+	
 	edgeArray = []
-	bound = 10
-	trans = [-1,2]
+	bound = 20
+	trans = [-1,2,4,6,8]
 	for i in range(bound+1):
 		for j in trans:
 			head = i
 			if j == -1:
 				tail = max(0,i-1)
 				if i == 0:
-					edgeArray.append([head,tail,"91\% -1,+0"])
+					edgeArray.append([head,tail,"p"])
 				else:
-					edgeArray.append([head,tail,"91\%,-0,+0"])
+					edgeArray.append([head,tail,"q"])
 
 			else:
 				tail = min(max(0,i-1)+j,bound)
 				if i == 0:
-					edgeArray.append([head,tail,"9\%,-1,+10"])
+					edgeArray.append([head,tail,"p"])
 				else:
-					edgeArray.append([head,tail,"9\%,-0,+10"])
+					edgeArray.append([head,tail,"q"])
 
 	MarkovChainTikz(edgeArray)
-
+	

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.5)  11 JAN 2021 00:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.5)  2 SEP 2021 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -463,16 +463,16 @@ e
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./compiled/markov_chain_gen.aux) ) 
 Here is how much of TeX's memory you used:
- 12663 strings out of 480608
- 269532 string characters out of 5903631
- 507223 words of memory out of 5000000
- 28344 multiletter control sequences out of 15000+600000
+ 12733 strings out of 480608
+ 270422 string characters out of 5903631
+ 592709 words of memory out of 5000000
+ 28414 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,9n,74p,403b,857s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmr10.pfb>
-Output written on ./compiled/markov_chain_gen.pdf (1 page, 15338 bytes).
+Output written on ./compiled/markov_chain_gen.pdf (1 page, 19467 bytes).
 PDF statistics:
  15 PDF objects out of 1000 (max. 8388607)
  10 compressed objects within 1 object stream
